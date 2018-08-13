@@ -43,7 +43,7 @@ namespace nats_subscribe_logging
             // The simple way to create an asynchronous subscriber
             // is to simply pass the event in.  Messages will start
             // arriving immediately.
-            IAsyncSubscription s = c.SubscribeAsync("bingham.*", h);
+            IAsyncSubscription s = c.SubscribeAsync("bingham.>", h);
         }
     }
 }
